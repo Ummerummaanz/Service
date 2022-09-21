@@ -21,10 +21,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="29dp"
-        android:layout_marginTop="197dp"
+        android:layout_marginBottom="37dp"
         android:onClick="serviceHandler"
         android:text="stop"
-        app:layout_constraintStart_toEndOf="@+id/btnStart"
+        app:layout_constraintBottom_toTopOf="@+id/btnUnbind"
+        app:layout_constraintStart_toEndOf="@+id/btnStart" />
+
+    <Button
+        android:id="@+id/btnBind"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:onClick="serviceHandler"
+        android:text="bind"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnUnbind"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnUnbind"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="282dp"
+        android:onClick="serviceHandler"
+        android:text="unbind"
+        app:layout_constraintStart_toStartOf="@+id/btnStop"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
